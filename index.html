@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Manthedan – RwandaMap AI</title>
+<meta name="description" content="Manthedan builds RwandaMap AI: explore Rwanda's schools on an interactive map and understand education access with data and AI.">
+<meta name="theme-color" content="#0b1d3a">
+<meta name="author" content="MANZI BRIAN BONHEUR, Manthedan">
+<meta property="og:type" content="website">
+<meta property="og:title" content="RwandaMap AI – Rwanda Education Intelligence">
+<meta property="og:description" content="Find. Understand. Connect. An AI-powered map of Rwanda's schools by Manthedan.">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="pinGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2f80f5"/><stop offset="1" stop-color="#0b46a8"/></linearGradient>
+  </defs>
+  <symbol id="logo" viewBox="0 0 100 112">
+    <path d="M50 2C28 2 12 18 12 40c0 24 38 56 38 56s38-32 38-56C88 18 72 2 50 2z" fill="url(#pinGrad)"/>
+    <path d="M33 24l9-5 10 2 9 7 5 9-5 8-2 9-9 5-8-5-9-2-4-9 4-8z" fill="#fff"/>
+    <path d="M4 80c15-3 32-1 46 10 14-11 31-13 46-10v15c-15-3-32-1-46 10-14-11-31-13-46-10z" fill="#2e9e4f"/>
+    <path d="M50 90v15" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M40 66l10-5 10 5-10 5z" fill="#2e9e4f"/>
+  </symbol>
+  <symbol id="mlogo" viewBox="0 0 48 36"><path d="M1 34L11 3l12 17L35 3l12 31h-9l-5-14-9 13-9-13-5 14z" fill="currentColor"/></symbol>
+</svg>
+
+<noscript><p style="padding:16px;background:#fff3cd;color:#533f03;margin:0">RwandaMap AI needs JavaScript. Please enable it in your browser.</p></noscript>
+<a class="skip" href="#content">Skip to content</a>
+
+<!-- ============ BANNER ============ -->
+<header class="banner">
+  <svg class="banner-hills" viewBox="0 0 1200 160" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+    <path d="M0 160V110l120-30 140 25 160-60 90 35 130-45 110 40 120-50 130 45 200-25v165z" fill="#1d4f3a" opacity=".55"/>
+    <path d="M0 160V130l180-35 150 30 200-70 150 55 180-40 140 35 200-30v125z" fill="#16402f" opacity=".75"/>
+    <path d="M0 160v-15l200-20 220 12 250-25 280 20 250-10v38z" fill="#0f2f24"/>
+  </svg>
+  <div class="banner-in">
+    <div class="brand">
+      <svg class="brand-logo" aria-hidden="true"><use href="#logo"/></svg>
+      <div><h1>RwandaMap <span class="g">AI</span></h1><p>Rwanda Education Intelligence</p></div>
+    </div>
+    <div class="mbrand">
+      <svg aria-hidden="true"><use href="#mlogo"/></svg>
+      <div><strong>Manthedan</strong><small>Innovation for a better tomorrow</small></div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ TABS ============ -->
+<nav class="tabsbar" aria-label="Main navigation">
+  <div class="tabs" id="tabs" role="tablist">
+    <a href="#home" role="tab" data-tab="home" data-icon="home"><span data-i18n="nav_home">Home</span></a>
+    <a href="#overview" role="tab" data-tab="overview" data-icon="plus-circle"><span data-i18n="nav_overview">Overview</span></a>
+    <a href="#schoolmap" role="tab" data-tab="schoolmap" data-icon="map"><span data-i18n="nav_map">School Map</span></a>
+    <a href="#gap" role="tab" data-tab="gap" data-icon="target"><span data-i18n="nav_gap">AI Access Gap</span></a>
+    <a href="#insights" role="tab" data-tab="insights" data-icon="chart"><span data-i18n="nav_insights">Insights</span></a>
+    <a href="#sources" role="tab" data-tab="sources" data-icon="file"><span data-i18n="nav_sources">Sources</span></a>
+    <a href="#about" role="tab" data-tab="about" data-icon="info"><span data-i18n="nav_about">About</span></a>
+  </div>
+  <div class="tools">
+    <button class="iconbtn" id="shareBtn" title="Share this page" aria-label="Share this page" data-icon="phone"></button>
+    <button class="iconbtn" id="themeBtn" title="Light / dark mode" aria-label="Toggle dark mode" data-icon="sun"></button>
+    <select id="lang" class="lang" aria-label="Language"><option value="en">EN</option><option value="fr">FR</option><option value="rw">RW</option></select>
+  </div>
+</nav>
+
+<main class="wrap" id="content">
+
+  <!-- ===== HOME: Manthedan ===== -->
+  <section id="home" class="panel" role="tabpanel">
+    <div class="hero">
+      <svg class="hero-m" aria-hidden="true"><use href="#mlogo"/></svg>
+      <p class="eyebrow">Welcome to</p>
+      <h2>Manthedan</h2>
+      <p class="hero-tag">Innovation for a better tomorrow</p>
+      <p class="hero-text">Manthedan builds AI-powered digital platforms that make important information about Rwanda easier to find, understand and use. Our first platform is <b>RwandaMap AI</b>, and its first application, <b>SchoolMap AI Rwanda</b>, helps people explore schools across the country and see where education access may need a closer look.</p>
+      <div class="hero-cta">
+        <button class="start" data-go="overview" data-icon="arrow"><span data-i18n="cta">Start</span></button>
+        <span class="mini">Find. Understand. Connect.</span>
+      </div>
+    </div>
+
+    <h3 class="sec-title">What Manthedan does</h3>
+    <div class="trio">
+      <article class="card tri"><span class="fi f1" data-icon="search"></span><h4>Find</h4><p>Puts Rwanda's institutions, services and schools on one interactive map, with search and filters.</p></article>
+      <article class="card tri"><span class="fi f2" data-icon="target"></span><h4>Understand</h4><p>Combines public data, maps and AI so that complex numbers become clear, simple insights.</p></article>
+      <article class="card tri"><span class="fi f4" data-icon="users"></span><h4>Connect</h4><p>Helps planners, researchers, NGOs, journalists, parents and citizens use evidence to make better decisions.</p></article>
+    </div>
+
+    <h3 class="sec-title">Our platforms</h3>
+    <div class="plat">
+      <div class="p1"><b>Manthedan</b><small>The company behind the platform</small></div>
+      <span class="arr">→</span>
+      <div class="p2"><b>RwandaMap AI</b><small>The mapping platform for Rwanda's institutions, services and communities</small></div>
+      <span class="arr">→</span>
+      <div class="p3"><b>SchoolMap AI Rwanda</b><small>The education application: school maps, access-gap analysis, AI insights</small></div>
+    </div>
+    <p class="quote">“Explore Rwanda through data, maps and AI.”</p>
+  </section>
+
+  <!-- ===== OVERVIEW ===== -->
+  <section id="overview" class="panel" role="tabpanel" hidden>
+    <h2 class="panel-title">Overview <small>National education indicators, 2024/2025</small></h2>
+    <div class="stats" aria-label="Key education indicators">
+      <article class="stat"><span class="sico blue" data-icon="home"></span>
+        <div><small>Total Schools</small><strong data-count="4996" data-fmt="int">4,996</strong><em>(MINEDUC 2024/2025)</em></div></article>
+      <article class="stat"><span class="sico blue" data-icon="users"></span>
+        <div><small>Total Learners</small><strong data-count="4822507" data-fmt="int">4,822,507</strong><em>(MINEDUC 2024/2025)</em></div></article>
+      <article class="stat"><span class="sico green" data-icon="wifi"></span>
+        <div><small>Internet Connectivity</small><strong data-count="83.7" data-fmt="pct">83.7%</strong><em>(MINEDUC 2024/2025)</em></div></article>
+      <article class="stat"><span class="sico green" data-icon="users"></span>
+        <div><small>Pupil/ Classroom Ratio</small><strong data-count="51" data-fmt="ratio">51:1</strong><em>(MINEDUC 2024/2025)</em></div></article>
+    </div>
+
+    <div class="ovGrid">
+      <div class="promo">
+        <h2>RwandaMap <span class="g">AI</span></h2>
+        <p class="lead">Turning Education Data into Actionable Intelligence</p>
+        <p class="sub">Explore Rwanda's schools, analyze education indicators, and discover opportunities for a more inclusive and connected future.</p>
+        <ul class="feat">
+          <li><span class="fi f1" data-icon="pin"></span>Interactive Map</li>
+          <li><span class="fi f2" data-icon="chart"></span>Real Data &amp; Insights</li>
+          <li><span class="fi f3" data-icon="target"></span>AI Access Gap Analysis</li>
+          <li><span class="fi f4" data-icon="users"></span>Better Decisions</li>
+        </ul>
+        <button class="cta" data-go="schoolmap" data-icon="arrow"><span>Open the School Map</span></button>
+        <p class="script">Together for a smarter education future</p>
+      </div>
+      <div class="card snap">
+        <h3>Education snapshot</h3>
+        <ul class="facts">
+          <li><b>1,576</b> public schools, <b>2,083</b> government-subsidized and <b>1,337</b> private</li>
+          <li><b>4,822,507</b> learners, up 1.2% from 4,766,125 in 2023/24</li>
+          <li><b>14,104,969</b> people in Rwanda in 2025 (NISR projection); learners are 34.2% of them</li>
+          <li><b>1,991</b> schools with secondary level and <b>581</b> with TVET</li>
+          <li><b>57:1</b> pupils per classroom in primary schools</li>
+        </ul>
+        <p class="note small">Source: MINEDUC Education Statistical Yearbook 2024/2025.</p>
+        <button class="btn blue" data-go="gap" data-icon="target"><span>Ask the AI about access gaps</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SCHOOL MAP ===== -->
+  <section id="schoolmap" class="panel" role="tabpanel" hidden>
+    <h2 class="panel-title">School Map <small>Rwanda education map</small></h2>
+    <div class="mapRow">
+      <section class="card mapCard">
+        <h2>Rwanda School Map <span class="badge demo" id="dataBadge">No records loaded</span></h2>
+        <label class="search">
+          <span data-icon="search" aria-hidden="true"></span>
+          <input id="q" type="search" placeholder="Search (Province, District, Sector...)" data-i18n-ph="search_ph" autocomplete="off" aria-label="Search schools">
+        </label>
+        <div class="filters">
+          <label>Province<select id="fProv"></select></label>
+          <label>District<select id="fDist"></select></label>
+          <label>Sector<select id="fSec"></select></label>
+        </div>
+        <div class="mapBox" id="mapBox">
+          <svg id="map" viewBox="-70 -45 570 450" role="img" aria-label="Interactive map of Rwanda showing schools">
+            <defs>
+              <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="currentColor" stroke-opacity=".06"/></pattern>
+              <filter id="soft" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity=".18"/></filter>
+            </defs>
+            <rect x="-2000" y="-2000" width="4000" height="4000" fill="url(#grid)" class="mgrid"/>
+            <path id="country" filter="url(#soft)"/>
+            <g class="mlabels">
+              <text x="215" y="-22">Uganda</text><text x="395" y="150">Tanzania</text>
+              <text x="-52" y="165">DRC</text><text x="130" y="398">Burundi</text>
+              <text class="big" x="105" y="235">Rwanda</text><text class="mid" x="232" y="200">Kigali</text>
+            </g>
+            <g id="dots"></g>
+            <circle id="ring" r="0" fill="none"/>
+          </svg>
+          <div class="mapCtl">
+            <button id="zIn" aria-label="Zoom in" data-icon="plus"></button>
+            <button id="zOut" aria-label="Zoom out" data-icon="minus"></button>
+            <button id="zHome" aria-label="Reset map view" data-icon="crosshair"></button>
+          </div>
+          <div class="legend" aria-label="Legend">
+            <span><i style="background:var(--c-pri)"></i>Primary School</span>
+            <span><i style="background:var(--c-sec)"></i>Secondary School</span>
+            <span><i style="background:var(--c-tvet)"></i>TVET School</span>
+            <span><i style="background:var(--c-sne)"></i>Special Needs School</span>
+            <span><i style="background:#7b8794"></i>Type not stated</span>
+          </div>
+          <div class="count" id="mapCount"></div>
+          <div class="empty" id="mapEmpty" hidden>
+            <b>No school records loaded yet</b>
+            <p>Load real schools from OpenStreetMap (needs internet), or import a MINEDUC list.</p>
+            <button class="btn green" id="emptyOsm" style="margin-bottom:8px">Load all schools from OpenStreetMap</button>
+            <button class="btn blue" id="emptyImport">Import data</button>
+          </div>
+        </div>
+      </section>
+
+      <div class="rightcol">
+        <section class="card sel" aria-live="polite">
+          <h2>Selected School</h2>
+          <div class="selRow">
+            <svg class="schoolpic" viewBox="0 0 120 90" aria-hidden="true">
+              <rect width="120" height="90" fill="#9fd0f2"/><rect y="62" width="120" height="28" fill="#6fae4f"/>
+              <rect x="14" y="28" width="92" height="38" fill="#c8754a"/><rect x="14" y="22" width="92" height="8" fill="#a24e2c"/>
+              <g fill="#f5ecd2"><rect x="22" y="38" width="10" height="10"/><rect x="40" y="38" width="10" height="10"/><rect x="70" y="38" width="10" height="10"/><rect x="88" y="38" width="10" height="10"/></g>
+              <rect x="54" y="46" width="12" height="20" fill="#5a3a22"/><circle cx="12" cy="52" r="10" fill="#3f8a3c"/><circle cx="110" cy="54" r="9" fill="#3f8a3c"/>
+            </svg>
+            <div><h3 id="sName">No school selected</h3><span class="badge" id="sType" hidden></span></div>
+          </div>
+          <ul class="loc">
+            <li><span data-icon="pin"></span><span id="sProv">Tap a dot on the map</span></li>
+            <li><span data-icon="pin"></span><span id="sDist">–</span></li>
+            <li><span data-icon="pin"></span><span id="sSec">–</span></li>
+          </ul>
+          <button class="btn blue" id="viewDetails">View Details <span data-icon="arrow"></span></button>
+        </section>
+        <section class="card qa">
+          <h2>Quick Actions</h2>
+          <button class="btn blue" id="allSchools" data-icon="map"><span data-i18n="act_all">View All Schools</span></button>
+          <button class="btn green" id="exportBtn" data-icon="download"><span data-i18n="act_export">Export Data</span></button>
+          <button class="btn purple" id="reportBtn" data-icon="file"><span data-i18n="act_report">Generate Report</span></button>
+          <button class="btn ghost" id="importBtn" data-icon="upload"><span>Import data</span></button>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AI ACCESS GAP ===== -->
+  <section id="gap" class="panel" role="tabpanel" hidden>
+    <h2 class="panel-title">AI Access Gap <small>Ask questions in Kinyarwanda, English or French</small></h2>
+    <div class="gapGrid">
+      <div class="card">
+        <h3>Schools per district</h3>
+        <p class="note">Counts come from the records loaded on the map. If the records are incomplete (for example an OpenStreetMap export), a low count may only mean the schools are not mapped yet. Compare with the MINEDUC district annexes before drawing conclusions.</p>
+        <div class="legendRow"><span><i class="dotk r"></i>Investigate</span><span><i class="dotk y"></i>Watch</span><span><i class="dotk g"></i>Well covered</span></div>
+        <div id="gapList" class="gapList"></div>
+      </div>
+      <div class="card chat">
+        <h3>Ask the AI assistant <small class="langhint">Kinyarwanda · English · Français</small></h3>
+        <div class="chips" id="chips"><button>Which areas have fewer schools?</button><button>Where are schools concentrated?</button><button>Which districts should be investigated?</button></div>
+        <div class="log" id="chatLog" aria-live="polite"></div>
+        <div class="ask">
+          <input id="askIn" type="text" placeholder="Type a question..." data-i18n-ph="ask_ph" aria-label="Ask the AI assistant">
+          <button id="askBtn" class="btn blue" aria-label="Send" data-icon="send"></button>
+        </div>
+        <p class="note small">AI insights support analysis and decision-making. They do not replace official statistics or expert judgment.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INSIGHTS ===== -->
+  <section id="insights" class="panel" role="tabpanel" hidden>
+    <h2 class="panel-title">Insights <small>Official figures and the records loaded on the map</small></h2>
+    <div class="insGrid">
+      <div class="card"><h3>Schools by owner (national, 4,996 schools)</h3><div id="barsOwner" class="bars"></div></div>
+      <div class="card"><h3>Schools by status (national)</h3><div id="barsStatus" class="bars"></div>
+        <p class="note small">Schools offering several levels are counted once here. By level: 4,221 with pre-primary, 4,086 with primary, 1,991 with secondary, 581 with TVET.</p></div>
+      <div class="card"><h3>Loaded records by school type</h3><div id="barsType" class="bars"></div></div>
+      <div class="card"><h3>Loaded records by province</h3><div id="barsProv" class="bars"></div></div>
+    </div>
+  </section>
+
+  <!-- ===== SOURCES ===== -->
+  <section id="sources" class="panel" role="tabpanel" hidden>
+    <h2 class="panel-title">Sources &amp; Methodology <small>Every figure shows where it comes from</small></h2>
+    <div class="srcGrid">
+      <article class="card"><h3>MINEDUC Yearbook 2024/2025</h3><p>Total schools (4,996), learners (4,822,507), internet connectivity (83.7% of schools), pupil/classroom ratio (51:1), ownership and status. School year ended July 2025; published February 2026.</p><p><a href="https://www.mineduc.gov.rw/fileadmin/user_upload/Mineduc/Publications/REPORTS/Education_Statistics/Education_statistical_yearbook/Education_Statistical_Year_Book_2024-2025.pdf" target="_blank" rel="noopener">Open the yearbook (PDF)</a></p></article>
+      <article class="card"><h3>NISR</h3><p>The yearbook uses NISR population projections from the 2022 Census (14,104,969 people in 2025) to calculate enrolment rates.</p><p><a href="https://www.statistics.gov.rw" target="_blank" rel="noopener">statistics.gov.rw</a></p></article>
+      <article class="card"><h3>School names &amp; locations</h3><p>Names and coordinates come only from real records: OpenStreetMap (© OpenStreetMap contributors, ODbL; crowd-sourced, not exhaustive) or a MINEDUC list you import.</p><p><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap copyright</a></p></article>
+      <article class="card"><h3>Data principle</h3><p>The presence or absence of a school does not prove an education problem. The platform highlights patterns that may need further investigation.</p></article>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="panel" role="tabpanel" hidden>
+    <h2 class="panel-title">About <small>Manthedan · RwandaMap AI · SchoolMap AI Rwanda</small></h2>
+    <div class="aboutGrid">
+      <div class="card">
+        <h3>What is RwandaMap AI?</h3>
+        <p>RwandaMap AI is an AI-powered mapping platform by Manthedan. It makes information about Rwanda's institutions, services, schools and communities easier to discover, understand and access.</p>
+        <p>SchoolMap AI Rwanda is its first application. It combines school data, geographic visualization and AI-assisted analysis to show how schools are distributed and where access may need a closer look.</p>
+        <p class="tag">Find. Understand. Connect.</p>
+      </div>
+      <div class="card">
+        <h3>Vision</h3><p>A smarter and more connected Rwanda where people can easily discover, understand and use important information through digital technology.</p>
+        <h3 style="margin-top:12px">Mission</h3><p>Combine data, maps and artificial intelligence to make information more accessible and support better evidence-based decisions.</p>
+      </div>
+      <div class="card">
+        <h3>Who it is for</h3>
+        <div class="tags"><span>Government institutions</span><span>Education planners</span><span>Researchers</span><span>Students</span><span>Teachers</span><span>NGOs</span><span>Development organizations</span><span>Parents &amp; communities</span><span>Journalists</span><span>Citizens</span></div>
+      </div>
+      <div class="card">
+        <h3>Future development</h3>
+        <div class="tags"><span>More complete national datasets</span><span>Route and navigation</span><span>Offline support</span><span>Android app</span><span>Advanced dashboards</span><span>Historical comparison</span><span>Predictive analysis</span><span>More public-service categories</span></div>
+      </div>
+      <div class="card wide credit">
+        <svg class="brand-logo" aria-hidden="true"><use href="#logo"/></svg>
+        <div><b>RwandaMap AI v1.0</b><p>Developed by <b>MANZI BRIAN BONHEUR</b> · Manthedan · © 2026 Manthedan. All rights reserved.</p>
+        <p>Built with HTML, CSS and JavaScript, interactive maps, public datasets and AI. Works on phones, tablets and computers.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <svg class="flag" viewBox="0 0 30 20" aria-label="Flag of Rwanda"><rect width="30" height="10" fill="#00a1de"/><rect y="10" width="30" height="5" fill="#fad201"/><rect y="15" width="30" height="5" fill="#20603d"/><circle cx="23" cy="5" r="2.2" fill="#fad201"/></svg>
+  <p><b>RwandaMap AI</b><span class="sep">|</span>Developed by Manthedan<span class="sep">|</span>MANZI BRIAN BONHEUR<span class="sep">|</span>© 2026 Manthedan. All rights reserved.</p>
+  <p class="script">Data · Maps · AI · A Better Rwanda</p>
+</footer>
+
+<div class="modal" id="modal" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <header><h2 id="mTitle"></h2><button class="iconbtn" id="mClose" aria-label="Close" data-icon="x"></button></header>
+    <div class="mBody" id="mBody"></div>
+  </div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="data/schools.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
